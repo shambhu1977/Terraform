@@ -9,9 +9,9 @@ pipeline {
         }
      }
      
-     stage('Terraform validate'){
+     stage('Terraform inti'){
         steps{
-           bat '''terraform validate'''
+           bat '''terraform init'''
         }
      }
     }
