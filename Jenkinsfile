@@ -5,7 +5,7 @@ pipeline {
      
      stage('Install'){
         steps{
-           git 'https://github.com/shambhu1977/Terraform-Project'
+           git 'https://github.com/shambhu1977/Terraform.git'
         }
      }
      
