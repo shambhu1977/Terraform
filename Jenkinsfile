@@ -32,5 +32,11 @@ pipeline {
            echo "Check localhost:8000"
         }
      }
+     
+     stage('Terraform Destory'){
+        steps{
+           bat'''terraform destroy'''
+        }
+     }
     }
   }
