@@ -14,5 +14,23 @@ pipeline {
            bat '''terraform init'''
         }
      }
+     
+     stage('Terraform plan'){
+        steps{
+           bat '''terraform plan'''
+        }
+     }
+     
+     stage('Terraform apply'){
+        steps{
+           bat'''terraform plan'''
+        }
+     }
+     
+     stage('Terraform Check'){
+        steps{
+           echo "Check localhost:8000"
+        }
+     }
     }
   }
